@@ -115,7 +115,7 @@ include("config.php");
     <br>
     
     <div class="row">
-      <input type="submit" name="submit" value="Save" class="btn btn-primary" style="margin-left:63%">
+      <input type="submit" name="submit" value="Save" class="btn btn-primary" style="margin-left:63%"/>
     </div>
      </div>
 </form>

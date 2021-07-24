@@ -34,7 +34,8 @@ include("config.php");
       </div>
     </div>
     <br>
-    <div style="margin-left:4%" class="row">
-      <input type="submit" name="btnLogin" value="Login" class="btn btn-primary" style="margin-left:63%">
+    <div style="margin-left:42%" class="row">
+    <input type="submit" name="btnLogin" value="login" class="btn btn-primary" >
+      
     </div>
      </div>
