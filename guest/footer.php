@@ -41,7 +41,7 @@
             <h4>Login</h4>
             <ul>
               <li><a href="#">User login</a></li>
-              <li><a href="#">Admin login</a></li>
+              <li><a href="AdminLogin.php">Admin login</a></li>
             </ul>
           </div>
           <div class="col-lg-4 col-md-6 single-footer-widget">
