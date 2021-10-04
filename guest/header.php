@@ -122,7 +122,7 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="studentreg.php">Registration</a>
+                  <a class="nav-link" href="studentreg.php">Apply Now</a>
                 </li>
 				   <li class="nav-item">
                   <a class="nav-link" href="customerlogin.php">Login</a>

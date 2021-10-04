@@ -6,7 +6,7 @@ $sql=mysqli_query($con,"select * from tbl_course where courseid='$courseid'");
 $row=mysqli_fetch_array($sql);
 $coursename=$row["coursename"];
 $shortname=$row["courseshortname"];
-$coursetype=$row["coursetype"]
+$coursetype=$row["txtcoursetype"]
 ?>
 <html>
 <body>
@@ -37,8 +37,8 @@ $coursetype=$row["coursetype"]
         <label style="margin-top: 23px;" >course Type</label>
       </div>
       <div class="col-md-3">
-      <input type="radio" name="txt_coursetype" style="margin-top: 23px;" value="UG">UG
-           <input type="radio" name="txt_coursetype" style="margin-top: 23px;" value="PG">PG
+      <input type="radio" name="txtcoursetype" style="margin-top: 23px;" value="UG">UG
+           <input type="radio" name="txtcoursetype" style="margin-top: 23px;" value="PG">PG
     </div>
      </div>
      <div class="row">

@@ -16,55 +16,7 @@ include("config.php");
 <div class="container" style="margin-left:93px; margin-bottom:10%;padding-left:130px; box-shadow: 2px 2px 10px #1b93e1; border-radius: 4px; top: 14px; padding-top: 3%;">
         <h2 style="text-align: center;margin-top: 6%;font-family: fantasy;">Student Registration</h2>
 
-    <br>    <br>
-    <div class="row">
- <div class="col-md-3" style="text-align:right">
-        <label>COURSE:</label>
-      </div>
-     <div class="col-md-6">
-     <?php
-     $sql=mysqli_query($con,"select * from tblcourse");?>
-     <select name="drpcoursename" class="form-control" style="width:500px;">
-     <option value="0">--Select--</option>
-     
-	<?php
-	while($row=mysqli_fetch_array($sql))
-	{
-	?>
-          
-	<option value="<?php echo $row['courseid'] ?>"> <?php echo $row['coursename'];?> </option>
-        <?php
-}
-?>
-        </select>
-      </div>
-    </div>
-     <br>
-     <div class="row">
-      <div class="col-md-3" style="text-align:right">
-        <label>BATCH:</label>
-      </div>
-     
-     <div class="col-md-6">
-     <?php
-     $sql=mysqli_query($con,"select * from tblbatch");?>
-     <select name="drpbatchname" class="form-control" style="width:500px;">
-     <option value="0">----Select---</option>
-     
-	<?php
-	while($row=mysqli_fetch_array($sql))
-	{
-	?>
-          
-	<option value="<?php echo $row['batchid'] ?>"> <?php echo $row['batchname'];?> </option>
-        <?php
-}
-?>
-        </select>
-      </div>
-    </div>
-   
-<br>
+    
    
 
     <div class="row">
@@ -77,13 +29,10 @@ include("config.php");
     </div>
     <br>
     <div class="row">
-     <div class="col-md-3" style="text-align:right">
-        <label>GENDER:</label>
-      </div>
-      <div class="col-md-6">
-      <input type="radio" name="rbgender" value="male" >Male
-       <input type="radio" name="rbgender" value="female" >Female
-         </div>
+     <div class="col-md-2" style=" margin: left 259px;">
+      <label for="birthday">DOB:</label>
+      <input type="date" id="birthday" name="birthday">
+    </div>
     </div>
     <br>
     <div class="row">
@@ -113,9 +62,18 @@ include("config.php");
       </div>
     </div>
     <br>
+    <div class="row">
+     <div class="col-md-3" style="text-align:right">
+        <label>PASSWORD:</label>
+      </div>
+      <div class="col-md-6">
+       <input type="text" class="form-control" name="txt_username" style="width:500px;" placeholder="Password" required>
+      </div>
+    </div>
+    <br>
     
     <div class="row">
-      <input type="submit" name="submit" value="Save" class="btn btn-primary" style="margin-left:63%"/>
+      <input type="submit" name="submit" value="Next" class="btn btn-primary" style="margin-left:63%"/>
     </div>
      </div>
 </form>
