@@ -84,11 +84,11 @@
                     role="button"
                     aria-haspopup="true"
                     aria-expanded="false"
-                    >Pages</a
+                    >Registration</a
                   >
                   <ul class="dropdown-menu">
                     <li class="nav-item">
-                      <a class="nav-link" href="courses.html">Courses</a>
+                      <a class="nav-link" href="course.php">Courses</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="course-details.html"

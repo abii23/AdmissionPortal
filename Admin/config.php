@@ -7,7 +7,7 @@
 
 <body>
 <?php
-$con=mysqli_connect("localhost","root","","db_vehicleservice");
+$con=mysqli_connect("localhost","root","","dbadmission");
 ?>
 </body>
 </html>

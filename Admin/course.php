@@ -4,8 +4,8 @@ include("header.php");
 <html>
 <body>
 <form method="POST" action="courseaction.php">
- <div class="container" style="margin-left:93px; margin-bottom:3%;padding-left:130px; box-shadow: 2px 2px 10px #1b93e1; border-radius: 4px; top: 14px; margin-top: 5%;"><br>
-    <h2 style="text-align: center;margin-top: 6%;">Course Registration</h2>
+ <div class="container" style="margin: left 110px; margin-bottom:3%;padding-left:130px; box-shadow: 2px 2px 10px #1b93e1; border-radius: 4px; top: 14px; margin-top: 5%;"><br>
+    <h2 style="text-align: center;margin-top: 16%;">Course Registration</h2>
     <br>
     <div class="row">
     <div class="col-md-3" style="text-align:right">
@@ -29,14 +29,14 @@ include("header.php");
         <label>Course Type</label>
       </div>
       <div class="col-md-6">
-      <input type="radio" name="txtcourse" value="male">UG
-           <input type="radio" name="txtcourse" value="female">PG
+      <input type="radio" name="txtcourse" value="UG">UG
+           <input type="radio" name="txtcourse" value="PG">PG
  
       </div>
     </div>
     <br>
      <div class="row">
-      <input type="submit" name="submit" value="Save" class="btn btn-primary" style="margin-left:63%">
+      <input type="submit" name="submit" value="Save" class="btn btn-primary" style="margin-left:43%" onclick="courseaction.php">
     </div>
     </div>
 </form>

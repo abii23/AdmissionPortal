@@ -84,7 +84,7 @@
                     role="button"
                     aria-haspopup="true"
                     aria-expanded="false"
-                    >Pages</a
+                    >Page</a
                   >
                   <ul class="dropdown-menu">
                     <li class="nav-item">
