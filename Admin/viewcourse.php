@@ -3,9 +3,9 @@ include("header.php");
 include("config.php");
 ?>
 <form action="course.php" method="get">
-  <div class="container" style="width:100%;margin-left:20%;" >
+  <div class="container" style="width:100%;margin-left:20%;margin-top:19px" >
   <div class="row">
-    <div class="col-md-9" style="box-shadow: 2px 2px 10px #1b93e1; border-radius:0px; top: 14px;">
+    <div class="col-md-9" style="box-shadow: 2px 2px 10px #1b93e1; border-radius:0px; top: 250px;">
       <h3 style="text-align: center">COURSE DETAILS</h3>
       <div class="form-horizontal" style="margin-left:0px;">
         <div class="form-group">
@@ -19,8 +19,8 @@ include("config.php");
               <th scope="col">#</th>
               <th scope="col">Course Name</th>
                 <th scope="col">Short Name</th>
-              <th style="col" style="color:#F00">Edit</th>
-              <th style="col" style="color:#F00">Delete</th>
+              <th scope="col" style="color:#F00">Edit</th>
+              <th scope="col" style="color:#F00">Delete</th>
             </tr>
           </thead>
           <?php
@@ -33,7 +33,7 @@ include("config.php");
 								echo "<td>" .$slno++."</td>";
 								
 								echo "<td>" .$row['coursename']."</td>";
-								echo "<td>" .$row['shortname']."</td>";
+								echo "<td>" .$row['courseshortname']."</td>";
 								
 								echo "<td><a href='course_edit.php?courseid=".$row ['courseid']."' class='glyphicon glyphicon-edit'>Edit</a> </td>";
 								
