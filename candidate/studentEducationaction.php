@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("config.php");
 $Enter10institutionname=$_POST["txt_institutiontenname"];
 $Enter10institutionplace=$_POST["txt_place"];
@@ -13,8 +14,10 @@ $Enter12institutionstate=$_POST["txt_institutionstate"];
 $Enter12year=$_POST["txt_plustwoyear"];
 $Enter11mark=$_POST["txt_11mark"];
 $Enter12mark=$_POST["txt_12mark"];
-$save=mysqli_query($con,"insert into  tbl_class10details(institutionname,placeofinstitution,stateofinstitution,yearofpassout,class10ofmark,noofattempts)values('$Enter10institutionname','$Enter10institutionplace','$Enter10institutionstate','$Enter10year','$Enter10mark','$Enter10attempt')");
-$save=mysqli_query($con,"insert into  tbl_class12details(institution_name,place_of_institution,state_of_institution,year_of_passout,class11ofmark,class12ofmark)values('$Enter12institutionname','$Enter12institutionplace','$Enter12institutionstate','$Enter12year','$Enter11mark','$Enter12mark')");
+$applicationnumber=$_SESSION["appno"];
+
+$save=mysqli_query($con,"insert into  tbl_class10details(institutionname,placeofinstitution,stateofinstitution,yearofpassout,class10ofmark,noofattempts,applicationnumber)values('$Enter10institutionname','$Enter10institutionplace','$Enter10institutionstate','$Enter10year','$Enter10mark','$Enter10attempt','$applicationnumber')");
+$save=mysqli_query($con,"insert into  tbl_class12details(institution_name,place_of_institution,state_of_institution,year_of_passout,class11ofmark,class12ofmark,applicationnumber)values('$Enter12institutionname','$Enter12institutionplace','$Enter12institutionstate','$Enter12year','$Enter11mark','$Enter12mark','$applicationnumber')");
 
 //$save=mysqli_query($con,"insert into  tbl_class10details(institutionname,placeofinstitution,stateofinstitution,yearofpassout,class10ofmark,noofattempts)values('$Enter10institutionname','$Enter10institutionplace','$Enter10institutionstate','$Enter10year','$Enter10mark','$Enter10attempt')");
 //echo "insert into  tbl_class10details(institutionname,placeofinstitution,stateofinstitution,yearofpassout,class10%ofmark,noofattempts)values('$Enter10institutionname','$Enter10institutionplace','$Enter10institutionstate','$Enter10year','$Enter10mark','$Enter10attempt')";
