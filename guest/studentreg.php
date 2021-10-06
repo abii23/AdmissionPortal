@@ -12,7 +12,7 @@ include("header.php");
 <?php
 include("config.php");
 ?>
-	<form action="action.php" method="post" enctype="multipart/form-data" style=" padding-top: 8%;">
+	<form action="studentregaction.php" method="post" enctype="multipart/form-data" style=" padding-top: 8%;">
 <div class="container" style="margin-left:93px; margin-bottom:10%;padding-left:130px; box-shadow: 2px 2px 10px #1b93e1; border-radius: 4px; top: 14px; padding-top: 3%;">
         <h2 style="text-align: center;margin-top: 6%;font-family: fantasy;">Student Registration</h2>
 
@@ -21,18 +21,29 @@ include("config.php");
 
     <div class="row">
      <div class="col-md-3" style="text-align:right">
-        <label>STUDENT NAME:</label>
+        <label>STUDENT  FIRST NAME:</label>
       </div>
       <div class="col-md-6">
-        <input type="text" class="form-control" name="txt_studentname" style="width:500px;" placeholder="Enter Student Name">
+        <input type="text" class="form-control" name="txt_studentfirstname" style="width:500px;" placeholder="Enter first Name">
       </div>
     </div>
     <br>
     <div class="row">
-     <div class="col-md-2" style=" margin: left 259px;">
-      <label for="birthday">DOB:</label>
-      <input type="date" id="birthday" name="birthday">
+     <div class="col-md-3" style="text-align:right">
+        <label>STUDENT  LAST NAME:</label>
+      </div>
+      <div class="col-md-6">
+        <input type="text" class="form-control" name="txt_studentlastname" style="width:500px;" placeholder="Enter last Name">
+      </div>
     </div>
+    <br>
+    <div class="row">
+     <div class="col-md-3" style="text-align:right">
+        <label>DOB:</label>
+      </div>
+      <div class="col-md-6">
+        <input type="date" class="form-control" name="txt_studentdob" style="width:500px;" placeholder="Enter Student Name">
+      </div>
     </div>
     <br>
     <div class="row">
@@ -49,7 +60,7 @@ include("config.php");
         <label>CONTACT:</label>
       </div>
       <div class="col-md-6">
-        <input type="tel"   pattern="[0-9]{10}" name="contact"  maxlength="12" title="ten digit cods" class="form-control" required ">
+        <input type="tel"   pattern="[0-9]{10}" name="txt_contact"  maxlength="12" title="ten digit cods" class="form-control" required ">
       </div>
     </div>
     <br>
@@ -67,7 +78,7 @@ include("config.php");
         <label>PASSWORD:</label>
       </div>
       <div class="col-md-6">
-       <input type="text" class="form-control" name="txt_username" style="width:500px;" placeholder="Password" required>
+       <input type="password" class="form-control" name="txt_password" style="width:500px;" placeholder="Password" required>
       </div>
     </div>
     <br>

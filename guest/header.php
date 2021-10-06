@@ -125,7 +125,7 @@
                   <a class="nav-link" href="studentreg.php">Apply Now</a>
                 </li>
 				   <li class="nav-item">
-                  <a class="nav-link" href="customerlogin.php">Login</a>
+                  <a class="nav-link" href="login.php">Login</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link search" id="search">
